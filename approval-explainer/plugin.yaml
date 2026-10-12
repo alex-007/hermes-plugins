@@ -1,0 +1,7 @@
+name: approval-explainer
+version: 1.2.0
+description: Russian command explanations in CLI and Matrix, with paginated CLI details.
+author: Alex
+requires_hermes: ">=0.21.5"
+provides_hooks:
+  - pre_approval_request

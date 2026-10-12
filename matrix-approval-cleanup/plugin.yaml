@@ -1,0 +1,5 @@
+name: matrix-approval-cleanup
+version: 1.0.0
+description: Profile-local bounded retry of Matrix seeded approval reaction cleanup.
+author: Alex
+requires_hermes: ">=0.21.7"
