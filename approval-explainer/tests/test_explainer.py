@@ -37,7 +37,7 @@ class Tests(unittest.TestCase):
                 emit.assert_not_called()
 
     def test_script_read_not_executed(self):
-        with tempfile.TemporaryDirectory(dir='/home/alex/.hermes/cache/scratch') as tmp:
+        with tempfile.TemporaryDirectory() as tmp:
             p = Path(tmp) / 'test.sh'
             p.write_text('echo EXAMPLE\n')
             self.assertIn('echo EXAMPLE', plugin.script_context(f'bash {p}'))

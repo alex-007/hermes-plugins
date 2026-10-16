@@ -8,4 +8,6 @@ Explicit absolute external script paths are read without executing them, bounded
 
 Installed in `$HERMES_HOME/plugins/approval-explainer/`. Enable/disable with `hermes plugins enable/disable approval-explainer`. Takes effect in a NEW CLI process; no gateway restart needed for CLI functionality. Requires `plugins.isolation: in_process` for rendering with the host UI; isolated plugin-host rendering is not supported. No core checkout edits, so normal updates do not need a patch reapplied.
 
-Tests: `hermes --run-module unittest discover -s "$HERMES_HOME/plugins/approval-explainer/tests" -v`. The source-path smoke fixture in tests can be run through a bootstrapped Hermes runtime in a PTY; it asks once/deny for a harmless print command without executing that command or storing permissions.
+Tests: `hermes --run-module unittest discover -s "${HERMES_HOME:-$HOME/.hermes}/plugins/approval-explainer/tests" -v`. The source-path smoke fixture in tests can be run through a bootstrapped Hermes runtime in a PTY; it asks once/deny for a harmless print command without executing that command or storing permissions.
+
+License: MIT; see [LICENSE](../LICENSE).
