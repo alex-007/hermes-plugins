@@ -1,6 +1,6 @@
 name: approval-explainer
-version: 1.2.0
-description: Russian command explanations in CLI and Matrix, with paginated CLI details.
+version: 1.3.0
+description: Russian command explanations in classic CLI, Ink TUI and Matrix.
 author: Alex
 requires_hermes: ">=0.21.5"
 provides_hooks:

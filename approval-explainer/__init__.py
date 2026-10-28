@@ -243,3 +243,5 @@ def register(ctx):
     ctx.register_hook("pre_approval_request", on_approval)
     from .matrix_support import register_matrix
     register_matrix(ctx, explain)
+    from .tui_support import register_tui
+    register_tui(ctx, explain)
